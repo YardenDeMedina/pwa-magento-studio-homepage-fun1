@@ -112,6 +112,9 @@ after the installation, you will be asked several questions - pick:
 
   ? Install package dependencies with yarn after creating project (Y/n) `Y`
 
+![pwa setup](./docs/images/pwa-setup.png)
+
+
 ---
 This will install our pwa react application and connect it to a cloud magento instance. now we can start developing!
 
