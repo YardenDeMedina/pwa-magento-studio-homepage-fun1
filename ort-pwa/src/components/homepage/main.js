@@ -2,7 +2,8 @@ import React from 'react';
 import { mergeClasses } from '@magento/venia-ui/lib/classify.js';
 import defaultClasses from './homepage.css';
 
-import ProductsComp from './products';
+import DressesComp from './dressesComp'
+import SweatersComp from './sweatersComp';
 
 
 function MainHomePageComp(props){
@@ -11,10 +12,12 @@ function MainHomePageComp(props){
 
     return(
         <React.Fragment>
+
             {/* Box at the begnnning of the page */}
             <div className={classes.box}>Yarden's</div> 
          
-            <ProductsComp product={"Dresses!!"}/>
+            {/* <DressesComp/> */}
+            <SweatersComp/>
 
 
 

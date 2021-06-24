@@ -4,7 +4,7 @@
     font-family: 'Dancing Script', cursive;
     text-align: center;
     margin-top: 8px;
-    min-height: 87vh;
+    min-height: 86vh;
     min-width: 80vh;
     border: solid black 2px;
     font-size: 5em;
@@ -13,3 +13,39 @@
     align-items: center;
 }
 
+.product_title_outside{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4em;
+}
+
+.product_titles {
+     position: relative;
+     display: inline-block;
+     margin: 50px 100px;
+ }
+ 
+ .product_titles:before {
+     content: "";
+     border: 1px solid rgb(0, 0, 0);
+     position: absolute;
+     width: 50%;
+     top: 12px;
+     left: -45px;
+ }
+ 
+ .product_titles:after {
+     content: "";
+     border: 1px solid rgb(0, 0, 0);
+     width: 50%;
+     position: absolute;
+     top: 12px;
+     right: -45px;
+ }
+
+ .product_row{
+     /* max-width: 300px; */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
