@@ -3,6 +3,7 @@ import { mergeClasses } from '@magento/venia-ui/lib/classify.js';
 import defaultClasses from './homepage.css';
 import {gql, useQuery} from '@apollo/client';
 import {GET_MY_SWEATERS} from '../gql_data/gqlSweaters'
+import {Link} from 'react-router-dom'
 
 
 function SweatersComp(props){
@@ -25,9 +26,12 @@ function SweatersComp(props){
 
                 {data.products.items.map(product => {
                     return (
-                        <div>
-                            <img src={product.small_image.url} width="300" />
-                        </div>
+                        <Link to={product.url_key+".html"}>
+
+                            <div className={classes.product_img}>
+                                <img src={product.small_image.url} width="300" />
+                            </div>
+                        </Link>
                             
                         )
                     })}

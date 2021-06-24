@@ -4,6 +4,7 @@ import defaultClasses from './homepage.css';
 
 import DressesComp from './dressesComp'
 import SweatersComp from './sweatersComp';
+import SkirtsComp from './skirtsComp';
 
 
 function MainHomePageComp(props){
@@ -18,6 +19,7 @@ function MainHomePageComp(props){
          
             <SweatersComp/>
             <DressesComp/>
+            <SkirtsComp/>
 
 
 
