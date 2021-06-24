@@ -35,11 +35,11 @@ const Homepage = (props) => {
             return (
               <React.Fragment>
 
-                <div>
+                {/* <div>
                     {product.name}, {product.price.regularPrice.amount.value}
-                </div>
+                </div> */}
               
-                <img src={product.small_image.url} width="200" />
+                <img src={product.small_image.url} width="400" />
                 
               </React.Fragment>
             )
@@ -52,27 +52,27 @@ export default Homepage;
 
 export const GET_MY_PRODUCTS = gql(`
 {
-    products(filter:{
-      price :{
-        from :"100",
-        to : "500"
+  products(filter:{
+    name:{
+      match:"Dress"
+    }
+
+  }) {
+    items {
+      name
+      id
+      small_image {
+        url
       }
-    }) {
-      items {
-        name
-        id
-        small_image {
-          url
-        }
-        url_key
-        price {
-                  regularPrice {
-            amount {
-              value
-            }
+      url_key
+      price {
+                regularPrice {
+          amount {
+            value
           }
         }
       }
     }
   }
+}
 `);
