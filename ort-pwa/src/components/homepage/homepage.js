@@ -1,7 +1,11 @@
 import React from 'react';
 import {gql, useQuery} from '@apollo/client';
+import { mergeClasses } from '@magento/venia-ui/lib/classify.js';
+import defaultClasses from './homepage.css';
 
 const Homepage = (props) => {
+
+    const classes = mergeClasses(defaultClasses)
 
     const { error, loading, data } = useQuery(GET_MY_PRODUCTS, {
         fetchPolicy : 'cache-and-network',
@@ -24,12 +28,18 @@ const Homepage = (props) => {
 
 
     return (
-    <div>
+    <div className={classes.main_class}>
         {data.products.items.map(product => {
             return (
+              <React.Fragment>
+
                 <div>
                     {product.name}, {product.price.regularPrice.amount.value}
                 </div>
+              
+                <img src={product.small_image.url} width="200" />
+                
+              </React.Fragment>
             )
         })}
     </div>
@@ -42,8 +52,8 @@ export const GET_MY_PRODUCTS = gql(`
 {
     products(filter:{
       price :{
-        from :"10",
-        to : "25"
+        from :"100",
+        to : "500"
       }
     }) {
       items {
