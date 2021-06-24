@@ -32,23 +32,6 @@ const Homepage = (props) => {
     return (
     <div className={classes.main_class}>
       <MainHomePageComp/>
-
-
-        {/* {data.products.items.map(product => {
-            return (
-              <React.Fragment> */}
-
-                {/* <div>
-                    {product.name}, {product.price.regularPrice.amount.value}
-                </div> */}
-              
-                {/* <img src={product.small_image.url} width="400" />
-                
-              </React.Fragment>
-            )
-        })} */}
-
-
     </div>
     )
 }
