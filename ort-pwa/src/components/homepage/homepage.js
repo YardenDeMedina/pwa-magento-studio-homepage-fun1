@@ -30,9 +30,9 @@ const Homepage = (props) => {
 
 
     return (
-    <div className={classes.main_class}>
-      <MainHomePageComp/>
-    </div>
+      <div className={classes.main_class}>
+        <MainHomePageComp/>
+      </div>
     )
 }
 
