@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.box{
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    margin-top: 8px;
+    min-height: 87vh;
+    min-width: 80vh;
+    border: solid black 2px;
+    font-size: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

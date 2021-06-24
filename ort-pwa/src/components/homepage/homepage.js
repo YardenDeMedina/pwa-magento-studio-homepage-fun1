@@ -2,6 +2,8 @@ import React from 'react';
 import {gql, useQuery} from '@apollo/client';
 import { mergeClasses } from '@magento/venia-ui/lib/classify.js';
 import defaultClasses from './homepage.css';
+import MainHomePageComp from './main';
+
 
 const Homepage = (props) => {
 
@@ -29,21 +31,24 @@ const Homepage = (props) => {
 
     return (
     <div className={classes.main_class}>
+      <MainHomePageComp/>
 
 
-        {data.products.items.map(product => {
+        {/* {data.products.items.map(product => {
             return (
-              <React.Fragment>
+              <React.Fragment> */}
 
                 {/* <div>
                     {product.name}, {product.price.regularPrice.amount.value}
                 </div> */}
               
-                <img src={product.small_image.url} width="400" />
+                {/* <img src={product.small_image.url} width="400" />
                 
               </React.Fragment>
             )
-        })}
+        })} */}
+
+
     </div>
     )
 }
