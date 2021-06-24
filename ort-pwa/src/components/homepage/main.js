@@ -16,8 +16,8 @@ function MainHomePageComp(props){
             {/* Box at the begnnning of the page */}
             <div className={classes.box}>Yarden's</div> 
          
-            {/* <DressesComp/> */}
             <SweatersComp/>
+            <DressesComp/>
 
 
 
