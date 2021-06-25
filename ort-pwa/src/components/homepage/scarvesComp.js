@@ -2,14 +2,14 @@ import React from 'react';
 import { mergeClasses } from '@magento/venia-ui/lib/classify.js';
 import defaultClasses from './homepage.css';
 import {useQuery} from '@apollo/client';
-import {GET_MY_SKIRTS} from '../gql_data/gql'
+import {GET_MY_SCARVES} from '../gql_data/gql'
 import {Link} from 'react-router-dom'
 
 
 function SkirtsComp(props){
 
 
-    const { data } = useQuery(GET_MY_SKIRTS, {
+    const { data } = useQuery(GET_MY_SCARVES, {
         fetchPolicy : 'cache-and-network',
     });
 
@@ -19,7 +19,7 @@ function SkirtsComp(props){
         <React.Fragment>
 
             <div className={classes.product_title_outside}>
-                <h1 className={classes.product_titles}>skirts</h1>
+                <h1 className={classes.product_titles}>Scarves</h1>
             </div> 
 
             <div className={classes.product_row}>
@@ -28,7 +28,7 @@ function SkirtsComp(props){
                     return (
                         <Link to={product.url_key+".html"}>
                             <div className={classes.product_img}>
-                                <img src={product.small_image.url} width="335" />
+                                <img src={product.small_image.url} width="300" />
                             </div>
                         </Link>
                             

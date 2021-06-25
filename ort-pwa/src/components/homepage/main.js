@@ -4,12 +4,14 @@ import defaultClasses from './homepage.css';
 
 import DressesComp from './dressesComp'
 import SweatersComp from './sweatersComp';
-import SkirtsComp from './skirtsComp';
+import SkirtsComp from './scarvesComp';
 
 
 function MainHomePageComp(props){
 
     const classes = mergeClasses(defaultClasses)
+
+
 
     return(
         <React.Fragment>

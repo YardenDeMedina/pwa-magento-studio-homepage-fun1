@@ -1,5 +1,22 @@
 import {gql} from '@apollo/client';
 
+
+export const GET_MY_PRODUCTS = gql(`
+{
+  products(
+    search:"dress sweater skirt",
+    filter:{name:{match:"dress sweater scarf"}}
+  ) {
+    items {
+      image {
+        url
+      }
+      url_key
+    }
+  }
+}
+`);
+
 export const GET_MY_DRESSES = gql(`
 {
   products(
@@ -29,13 +46,13 @@ export const GET_MY_DRESSES = gql(`
 }
 `);
 
-export const GET_MY_SKIRTS = gql(`
+export const GET_MY_SCARVES = gql(`
 {
   products(
     pageSize:4 
     filter:{
     name:{
-      match:"skirt"
+      match:"scarf"
     }
 
   }) {

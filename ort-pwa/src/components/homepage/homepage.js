@@ -1,9 +1,9 @@
 import React from 'react';
-import {gql, useQuery} from '@apollo/client';
+import {useQuery} from '@apollo/client';
 import { mergeClasses } from '@magento/venia-ui/lib/classify.js';
 import defaultClasses from './homepage.css';
 import MainHomePageComp from './main';
-
+import {GET_MY_PRODUCTS} from '../gql_data/gql'
 
 const Homepage = (props) => {
 
@@ -28,7 +28,7 @@ const Homepage = (props) => {
         )
     }
 
-
+    console.log("HHHeyy",data.products.items);
     return (
       <div className={classes.main_class}>
         <MainHomePageComp/>
@@ -38,29 +38,29 @@ const Homepage = (props) => {
 
 export default Homepage;
 
-export const GET_MY_PRODUCTS = gql(`
-{
-  products(filter:{
-    name:{
-      match:"Dress"
-    }
+// export const GET_MY_PRODUCTS = gql(`
+// {
+//   products(filter:{
+//     name:{
+//       match:"Dress"
+//     }
 
-  }) {
-    items {
-      name
-      id
-      small_image {
-        url
-      }
-      url_key
-      price {
-                regularPrice {
-          amount {
-            value
-          }
-        }
-      }
-    }
-  }
-}
-`);
+//   }) {
+//     items {
+//       name
+//       id
+//       small_image {
+//         url
+//       }
+//       url_key
+//       price {
+//                 regularPrice {
+//           amount {
+//             value
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+// `);

@@ -19,7 +19,7 @@ function SweatersComp(props){
         <React.Fragment>
 
             <div className={classes.product_title_outside}>
-                <h1 className={classes.product_titles}>sweaters</h1>
+                <h1 className={classes.product_titles}>Sweaters</h1>
             </div> 
 
             <div className={classes.product_row}>

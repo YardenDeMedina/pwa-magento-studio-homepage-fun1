@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
+/* Main box with "yarden's" */
 .box{
     font-family: 'Dancing Script', cursive;
     text-align: center;
@@ -44,7 +45,6 @@
  }
 
  .product_row{
-     /* max-width: 300px; */
      display: flex;
      justify-content: center;
      align-items: center;
