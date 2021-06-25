@@ -23,12 +23,11 @@ function SweatersComp(props){
             </div> 
 
             <div className={classes.product_row}>
-
-                {data.products.items.map(product => {
+                {data.products.items.map((product,i) => {
                     return (
-                        <Link to={product.url_key+".html"}>
+                        <Link key={i} to={product.url_key+".html"}>
                             <div className={classes.product_img}>
-                                <img src={product.small_image.url} width="300" />
+                                <img src={product.small_image.url} width="300" alt="sweater"/>
                             </div>
                         </Link>
                             
