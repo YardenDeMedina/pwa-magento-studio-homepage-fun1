@@ -27,7 +27,6 @@ function SweatersComp(props){
                 {data.products.items.map(product => {
                     return (
                         <Link to={product.url_key+".html"}>
-
                             <div className={classes.product_img}>
                                 <img src={product.small_image.url} width="300" />
                             </div>
