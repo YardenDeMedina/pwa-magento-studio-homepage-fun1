@@ -1,8 +1,8 @@
 import React from 'react';
 import { mergeClasses } from '@magento/venia-ui/lib/classify.js';
 import defaultClasses from './homepage.css';
-import {gql, useQuery} from '@apollo/client';
-import {GET_MY_SKIRTS} from '../gql_data/gqlSkirts'
+import {useQuery} from '@apollo/client';
+import {GET_MY_SKIRTS} from '../gql_data/gql'
 import {Link} from 'react-router-dom'
 
 
