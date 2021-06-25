@@ -23,7 +23,6 @@ function DressesComp(props){
             </div> 
 
             <div className={classes.product_row}>
-
                 {data.products.items.map(product => {
                     return (
                         <Link to={product.url_key+".html"}>
