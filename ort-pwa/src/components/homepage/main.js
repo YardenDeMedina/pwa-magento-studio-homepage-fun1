@@ -13,15 +13,12 @@ function MainHomePageComp(props){
 
     return(
         <React.Fragment>
-
             {/* Box at the begnnning of the page */}
             <div className={classes.box}>Yarden's</div> 
          
             <SweatersComp/>
             <DressesComp/>
             <SkirtsComp/>
-
-
 
         </React.Fragment>
     )

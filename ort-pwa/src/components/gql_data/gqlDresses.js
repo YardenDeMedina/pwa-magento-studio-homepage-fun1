@@ -2,9 +2,11 @@ import {gql, useQuery} from '@apollo/client';
 
 export const GET_MY_DRESSES = gql(`
 {
-  products(filter:{
+  products(
+    pageSize:5 
+    filter:{
     name:{
-      match:Dress
+      match:"dress"
     }
 
   }) {
