@@ -91,6 +91,7 @@
     "lodash.set": "~4.3.2",
     "memoize-one": "~5.0.0",
     "memory-fs": "~0.4.1",
+    "my-extension": "file:/home/yarden/dev/pwa_studios/talons-test-folder/talons-pwa-test",
     "prettier": "~1.16.4",
     "prop-types": "~15.7.2",
     "react": "~17.0.1",
