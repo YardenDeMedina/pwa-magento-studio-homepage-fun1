@@ -28,9 +28,10 @@ const Homepage = (props) => {
         )
     }
 
+
     return (
       <div className={classes.main_class}>
-        <MainHomePageComp/>
+        <MainHomePageComp data={data} />
       </div>
     )
 }

@@ -8,24 +8,24 @@ export const GET_MY_PRODUCTS = gql(`
     $searchTermTwo : String = "dress",
     $searchTermThree : String = "scarf"
   ) {
-    dresses: products( 
+    sweaters: products( 
       pageSize : $numOfProducts,
       search : $searchTermOne
     ) {
       items {
-        image {
+        small_image {
           url
         }
         url_key
       }
 
     },
-    sweaters: products(
+    dresses: products(
       pageSize: $numOfProducts
       search : $searchTermTwo
     ){
       items {
-        image {
+        small_image {
           url
         }
         url_key
@@ -36,7 +36,7 @@ export const GET_MY_PRODUCTS = gql(`
       search : $searchTermThree
     ){
       items {
-        image {
+        small_image {
           url
         }
         url_key
@@ -45,96 +45,4 @@ export const GET_MY_PRODUCTS = gql(`
   }
 
 `);
-
-export const GET_MY_DRESSES = gql(`
-{
-  products(
-    pageSize:5 
-    filter:{
-    name:{
-      match:"dress"
-    }
-
-  }) {
-    items {
-      name
-      id
-      small_image {
-        url
-      }
-      url_key
-      price {
-                regularPrice {
-          amount {
-            value
-          }
-        }
-      }
-    }
-  }
-}
-`);
-
-export const GET_MY_SCARVES = gql(`
-{
-  products(
-    pageSize:4 
-    filter:{
-    name:{
-      match:"scarf"
-    }
-
-  }) {
-    items {
-      name
-      id
-      small_image {
-        url
-      }
-      url_key
-      price {
-                regularPrice {
-          amount {
-            value
-          }
-        }
-      }
-    }
-  }
-}
-`);
-
-
-export const GET_MY_SWEATERS = gql(`
-{
-  products(
-    pageSize:4
-    filter:{
-    name:{
-      match:"sweater"
-    }
-
-  }) {
-    items {
-      name
-      id
-      small_image {
-        url
-      }
-      url_key
-      price {
-                regularPrice {
-          amount {
-            value
-          }
-        }
-      }
-    }
-  }
-}
-`);
-
-
-
-
 
