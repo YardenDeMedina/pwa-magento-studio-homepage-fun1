@@ -22,7 +22,7 @@ function ProductsComp(props){
                     return (
                         <Link key={i} to={product.url_key+".html"}>
                             <div className={classes.product_img}>
-                                <img src={product.small_image.url} width="320" alt={product}/>
+                                <img src={product.small_image.url} width="300" alt={product}/>
                             </div>
                         </Link>
                             
