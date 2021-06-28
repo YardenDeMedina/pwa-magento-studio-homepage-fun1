@@ -11,9 +11,6 @@ function ProductsComp(props){
     let product_array = props.data.items;
     let product = props.product;
 
-    console.log("YARDEN1111", product_array)
-    console.log("YARDENDN22222", product)
-
     return(
         <React.Fragment>
 
@@ -26,7 +23,7 @@ function ProductsComp(props){
                     return (
                         <Link key={i} to={product.url_key+".html"}>
                             <div className={classes.product_img}>
-                                <img src={product.small_image.url} width="300" alt={product}/>
+                                <img src={product.small_image.url} width="320" alt={product}/>
                             </div>
                         </Link>
                             
