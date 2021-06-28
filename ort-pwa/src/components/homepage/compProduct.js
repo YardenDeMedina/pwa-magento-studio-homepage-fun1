@@ -12,8 +12,7 @@ function ProductsComp(props){
     let product = props.product;
 
     return(
-        <React.Fragment>
-
+        <>
             <div className={classes.product_title_outside}>
                 <h1 className={classes.product_titles}>{product}</h1>
             </div> 
@@ -30,8 +29,7 @@ function ProductsComp(props){
                         )
                     })}
             </div>
-
-        </React.Fragment>
+        </>
     )
 
     
