@@ -10122,8 +10122,6 @@ mute-stream@0.0.8:
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.8.tgz#1630c42b2251ff81e2a283de96a5497ea92e5e0d"
   integrity sha512-nnbWWOkoWyUsTjKrhgD0dcz22mdkSnpYqbEjIm2nhwhuxlSkpywJmBo8h0ZqJdkp73mb90SssHkN4rsRaBAfAA==
 
-"my-extension@file:/home/yarden/dev/pwa_studios/talons-test-folder/talons-pwa-test":
-  version "0.0.1"
 
 nan@^2.12.1, nan@^2.14.0:
   version "2.14.2"
