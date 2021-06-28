@@ -1,10 +1,6 @@
 import React from 'react';
 import { mergeClasses } from '@magento/venia-ui/lib/classify.js';
 import defaultClasses from './homepage.css';
-
-import DressesComp from './compDresses'
-import SweatersComp from './compSweaters';
-import SkirtsComp from './compScarves';
 import ProductsComp from './compProduct';
 
 
